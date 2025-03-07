@@ -54,17 +54,17 @@ grid_str = """
 grid = [[int(num) for num in line.split()] for line in grid_str.strip().split("\n")]
 
 test_cases = (
-    [5,  13,   36],
-    [9,  5,     0],
-    [16, 3,    73],
-    [19, 19,   48],
-    [9,  5,     0]
+    [5,  13, 36],
+    [9,  5,   0],
+    [16, 3,  73],
+    [19, 19, 48],
+    [9,  5,   0]
 )
 
 
 # Check the structure
 def test_grid(x, y, expected):
-    if x > 19 or y > 19:  
+    if x > 19 or y > 19:
         raise ValueError("Value out of range")
     return grid[x][y] == expected  # Simplified return
 
